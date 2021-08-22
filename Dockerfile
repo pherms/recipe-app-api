@@ -1,7 +1,7 @@
 FROM python:3.7-alpine
 LABEL maintainer="pherms@outlook.com"
 
-RUN apk add build-base
+RUN apk add build-base python3-dev
 
 ENV PYTHONUNBUFFERED 1
 
