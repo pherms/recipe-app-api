@@ -6,7 +6,7 @@ RUN apk add build-base python3-dev
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
-RUN pip install pip=20.1
+RUN pip install pip==20.1
 RUN pip install -r /requirements.txt
 
 RUN mkdir /app
