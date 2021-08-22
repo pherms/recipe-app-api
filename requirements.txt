@@ -4,4 +4,3 @@ flake8>=3.9.2,<3.10.0
 cryptography
 flake8-csv
 importlib_metadata
-python3-distutils
