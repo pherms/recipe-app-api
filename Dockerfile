@@ -1,7 +1,7 @@
 FROM python:3.9-alpine
 LABEL maintainer="pherms@outlook.com"
 
-RUN apk add build-base python3-dev libffi-dev rust>=1.41.0
+RUN apk add build-base python3-dev libffi-dev rust>=1.41.0 cargo
 
 ENV PYTHONUNBUFFERED 1
 
