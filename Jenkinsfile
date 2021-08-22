@@ -1,5 +1,6 @@
 pipeline {
-    agent { dockerfile true }
+    // agent { dockerfile true }
+    agent any
     environment {
         CI = 'true'
     }
