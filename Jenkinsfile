@@ -6,7 +6,9 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh 'python manage.py test && flake8'
+                dir('app') {
+                    sh 'python manage.py test && flake8'
+                }
             }
         }
     }
