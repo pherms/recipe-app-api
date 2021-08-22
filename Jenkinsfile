@@ -7,7 +7,7 @@ pipeline {
         stage('test') {
             steps {
                 dir('app') {
-                    sh 'python manage.py test && flake8'
+                    sh 'docker-compose run app sh -c "python manage.py test && flake8"'
                 }
             }
         }
