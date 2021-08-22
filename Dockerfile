@@ -1,7 +1,7 @@
 FROM python:3.9-alpine
 LABEL maintainer="pherms@outlook.com"
 
-RUN apk add build-base python3-dev
+RUN apk add build-base python3-dev libffi-dev
 
 ENV PYTHONUNBUFFERED 1
 
