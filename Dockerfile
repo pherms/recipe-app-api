@@ -1,6 +1,8 @@
 FROM python:3.7-alpine
 LABEL maintainer="pherms@outlook.com"
 
+RUN apk add build-base
+
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
