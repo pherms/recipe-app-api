@@ -1,7 +1,7 @@
 FROM python:3.9-alpine
 LABEL maintainer="pherms@outlook.com"
 
-RUN apk add --update --no-cache docker-compose postgresql-client
+RUN apk add --update --no-cache docker-compose docker-cli postgresql-client
 RUN apk add --update --no-cache --virtual .tmp-build-deps \
       gcc libc-dev linux-headers postgresql-dev build-base python3-dev libffi-dev rust>=1.41.0 cargo openssl-dev
 
